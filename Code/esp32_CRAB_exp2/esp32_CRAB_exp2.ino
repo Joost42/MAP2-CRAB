@@ -84,16 +84,6 @@ static bool debug_nn = false; // Set this to true to see e.g. features generated
 static bool is_initialised = false;
 uint8_t *snapshot_buf; //points to the output of the capture
 
-int treshold = 1;
-int detectPin = 12;
-bool oneSecondPassed = false;
-int number=0;
-hw_timer_t *My_timer2 = NULL;
-
-void IRAM_ATTR onTimer2(){
-      oneSecondPassed = true;
-}
-
 static camera_config_t camera_config = {
     .pin_pwdn = PWDN_GPIO_NUM,
     .pin_reset = RESET_GPIO_NUM,
@@ -142,7 +132,6 @@ void setup()
     //comment out the below line to start inference immediately after upload
     while (!Serial);
     Serial.println("Edge Impulse Inferencing Demo");
-    pinMode (detectPin, INPUT);
     if (ei_camera_init() == false) {
         ei_printf("Failed to initialize Camera!\r\n");
     }
@@ -150,10 +139,8 @@ void setup()
         ei_printf("Camera initialized\r\n");
     }
  
-    My_timer2 = timerBegin(2, 80, true);
-    timerAttachInterrupt(My_timer2, &onTimer2, true);
-    timerAlarmWrite(My_timer2, 1612000, true);
-    timerAlarmEnable(My_timer2); //Just Enable
+    esp_sleep_enable_ext0_wakeup(GPIO_NUM_12,0);
+    //esp_sleep_enable_ext1_wakeup(0x1000,ESP_EXT1_WAKEUP_ALL_LOW);
 
     ei_printf("\nStarting continious inference...\n");
 }
@@ -166,8 +153,6 @@ void setup()
 void loop()
 {
     delay(1);
-    if(oneSecondPassed == true){
-      oneSecondPassed = false;
       snapshot_buf = (uint8_t*)malloc(EI_CAMERA_RAW_FRAME_BUFFER_COLS * EI_CAMERA_RAW_FRAME_BUFFER_ROWS * EI_CAMERA_FRAME_BYTE_SIZE);
   
       // check if allocation was successful
@@ -224,7 +209,7 @@ void loop()
   
   
       free(snapshot_buf);
-    }
+      esp_deep_sleep_start();
 }
 
 /**
