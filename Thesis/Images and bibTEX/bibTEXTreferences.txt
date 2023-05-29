@@ -1,0 +1,171 @@
+@Article{crab1,
+author={Ruben Joosen, Satish Singh, Maarten Weyn, Jonas Schoelynck},
+title={Determination of Migration Patterns of Crabs in a
+High Turbid Submerged Environment Using Object
+Detection and Tracking},
+}
+
+@Article{crab2,
+author={Schoelynck J, Van Loon P, Heirmans R, Jacobs S, Keirsebelik H.},
+title={Design and testing of a
+trap removing Chinese mitten crabs (Eriocheir sinensis, H.
+Milne Edwards, 1853) from invaded river systems.},
+journal={River Res Applic.},
+year={2020},
+month={1–11.} ,
+doi={https://doi.org/10.1002/rra.3635},
+}
+
+@conference{postbox,
+title = "The Use of “Postbox Traps” in the Control of Chinese Mitten Crab in Flanders (Belgium)",
+author = "Bram D'hondt and {Van Loon}, Paul and Heleen Keirsebelik and Dan Slootmaekers and Pieter Boets and {Van Roeyen}, Koen and Hugo Verreycken and Jonas Schoelynck",
+year = "2022",
+month = apr,
+day = "22",
+language = "English",
+}
+
+@Online{piConsumption,
+title={How much power does the Pi4B use? Power Measurements},
+journal={RasPi.TV},
+url={https://raspi.tv/2019/how-much-power-does-the-pi4b-use-power-measurements},
+urldate={30/04/2023}
+}
+
+@techreport{IR1,
+title = {White paper: Infrared Illumination
+for Time-of-Flight
+Applications},
+institution =   {Lumileds Holding B.V.},
+PAGES = {16},
+FILE = {https://lumileds.com/wp-content/uploads/files/WP35.pdf}
+}
+
+@INPROCEEDINGS{FOMO1,
+  author={Nicolas, Chollet and Naila, Bouchemal and Amar, Ramdane-Cherif},
+  booktitle={2022 Thirteenth International Conference on Ubiquitous and Future Networks (ICUFN)}, 
+  title={TinyML Smart Sensor for Energy Saving in Internet of Things Precision Agriculture platform}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={256-259},
+doi={10.1109/ICUFN55119.2022.9829675}
+}
+
+@misc{EDGEFOMO,
+  author = {Moreau, L. and Kelcey, M.},
+  title = {Announcing FOMO (Faster Objects, MoreObjects)},
+  year = {2022},
+  howpublished = {Edge Impulse},
+  url = {https://www.edgeimpulse.com/blog/announcing-fomo-faster-objects-more-objects}
+}
+
+@misc{sandler2019mobilenetv2,
+      title={MobileNetV2: Inverted Residuals and Linear Bottlenecks}, 
+      author={Mark Sandler and Andrew Howard and Menglong Zhu and Andrey Zhmoginov and Liang-Chieh Chen},
+      year={2019},
+      eprint={1801.04381},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{howard2017mobilenets,
+      title={MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications}, 
+      author={Andrew G. Howard and Menglong Zhu and Bo Chen and Dmitry Kalenichenko and Weijun Wang and Tobias Weyand and Marco Andreetto and Hartwig Adam},
+      year={2017},
+      eprint={1704.04861},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{DEPTHCNN,
+  author = {Zhe Ming Chng},
+  title = {Using Depthwise Separable Convolutions in Tensorflow},
+  year = {2022},
+  howpublished = {Deep Learning for Computer Vision},
+  url = {https://machinelearningmastery.com/using-depthwise-separable-convolutions-in-tensorflow/}
+}
+
+@ARTICLE{10093891,
+
+  author={Aira, Javier and Olivares, Teresa and Delicado, Francisco M. and Vezzani, Darío},
+
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+
+  title={MosquIoT: A System Based on IoT and Machine Learning for the Monitoring of Aedes aegypti (Diptera: Culicidae)}, 
+
+  year={2023},
+
+  volume={72},
+
+  number={},
+
+  pages={1-13},
+
+  doi={10.1109/TIM.2023.3265119}}
+
+@article{BandB1,
+title = {Branch-and-bound algorithms: A survey of recent advances in searching, branching, and pruning},
+journal = {Discrete Optimization},
+volume = {19},
+pages = {79-102},
+year = {2016},
+issn = {1572-5286},
+doi = {https://doi.org/10.1016/j.disopt.2016.01.005},
+url = {https://www.sciencedirect.com/science/article/pii/S1572528616000062},
+author = {David R. Morrison and Sheldon H. Jacobson and Jason J. Sauppe and Edward C. Sewell},
+keywords = {Branch-and-bound, Discrete optimization, Integer programming, Search strategies, Cyclic best first search, Survey},
+abstract = {The branch-and-bound (B&B) algorithmic framework has been used successfully to find exact solutions for a wide array of optimization problems. B&B uses a tree search strategy to implicitly enumerate all possible solutions to a given problem, applying pruning rules to eliminate regions of the search space that cannot lead to a better solution. There are three algorithmic components in B&B that can be specified by the user to fine-tune the behavior of the algorithm. These components are the search strategy, the branching strategy, and the pruning rules. This survey presents a description of recent research advances in the design of B&B algorithms, particularly with regards to these three components. Moreover, three future research directions are provided in order to motivate further exploration in these areas.}
+}
+
+@Article{BandB2,
+  author={E. L. Lawler and D. E. Wood},
+  title={{Branch-and-Bound Methods: A Survey}},
+  journal={Operations Research},
+  year=1966,
+  volume={14},
+  number={4},
+  pages={699-719},
+  month={August},
+  keywords={},
+  doi={10.1287/opre.14.4.699},
+  abstract={The essential features of the branch-and-bound approach to constrained optimization are described, and several specific applications are reviewed. These include integer linear programming (Land-Doig and Balas methods), nonlinear programming (minimization of nonconvex objective functions), the traveling-salesman problem (Eastman and Little, et al. methods), and the quadratic assignment problem (Gilmore and Lawler methods). Computational considerations, including trade-offs between length of computation and storage requirements, are discussed and a comparison with dynamic programming is made. Various applications outside the domain of mathematical programming are also mentioned.},
+  url={https://ideas.repec.org/a/inm/oropre/v14y1966i4p699-719.html}
+}
+
+@Online{BandBsite,
+title={Job Assignment Problem using Branch And Bound},
+journal={geeksforgeeks.org},
+url={https://www.geeksforgeeks.org/job-assignment-problem-using-branch-and-bound/},
+urldate={28/05/2023}
+}
+
+@article{hungarian,
+author = {Kuhn, H. W.},
+title = {The Hungarian method for the assignment problem},
+journal = {Naval Research Logistics Quarterly},
+volume = {2},
+number = {1-2},
+pages = {83-97},
+doi = {https://doi.org/10.1002/nav.3800020109},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/nav.3800020109},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/nav.3800020109},
+abstract = {Abstract Assuming that numerical scores are available for the performance of each of n persons on each of n jobs, the “assignment problem” is the quest for an assignment of persons to jobs so that the sum of the n scores so obtained is as large as possible. It is shown that ideas latent in the work of two Hungarian mathematicians may be exploited to yield a new method of solving this problem.},
+year = {1955}
+}
+
+@article{accuracyExternalBox,
+author = {Boussarie, G. and Teichert, N. and Lagarde, R. and Ponton, D.},
+title = {BichiCAM, an Underwater Automated Video Tracking System for the Study of Migratory Dynamics of Benthic Diadromous Species in Streams},
+journal = {River Research and Applications},
+volume = {32},
+number = {6},
+pages = {1392-1401},
+keywords = {image processing, migration, rivers, amphidromy, recruitment, fish, invertebrates},
+doi = {https://doi.org/10.1002/rra.2984},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rra.2984},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rra.2984},
+abstract = {Abstract Conventional methods for surveying diadromous fish migration from marine coastal waters to freshwater habitats are mainly based on electrofishing, a non-optimal technique for the study of fish migrations in rivers, and fishermen catch data. Underwater video has been recognized for a long time as a good alternative, but those approaches usually require intensive labour for retrieving the information from the video sequences. To overcome these problems, an underwater video system specifically designed for field work (low-weight, low-cost and autonomous) named BichiCAM has been developed for automatically counting, measuring and tracking fish observed in video sequences. The efficiency and precision of the BichiCAM system were tested by filming Sicyopterus lagocephalus juveniles passing through the camera field of vision in the Saint-Etienne River, Reunion Island, Western Indian Ocean. The BichiCAM system accurately measured fish length of the observed individuals when lens distortion of the camera was corrected, and the error percentages on the measurements presented a standard deviation of 5.1\% of the total length. The BichiCAM system provides a powerful tool that will not only facilitate research on migrating fishes and invertebrates' communities but also allow studies of the effectiveness of fishways associated to dams or the impacts of fishery activities. Copyright © 2015 John Wiley \& Sons, Ltd.},
+year = {2016}
+}
+
